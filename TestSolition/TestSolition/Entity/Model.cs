@@ -22,18 +22,25 @@ namespace TestSolition.Entity
 
         private string GetConnectionString()
         {
-
+            String DB_SERVER = "localhost";
+            String DB_PORT = "5432";
+            String DB_CATAROG = "postgres";
+            String DB_USER = "postgres";
+            String DB_PASSWORD = "ac-12457";
             var sb = new StringBuilder();
-            sb.Append($"Server=localhost;")
-            .Append($"Port=5432;")
-            .Append($"Database=postgres;")
-            .Append($"User Id=postgres;")
-            .Append($"Password=ac-12457;ApplicationName=TAS-CL;Enlist=True;");
+            sb.Append($"Server={DB_SERVER};")
+            .Append($"Port={DB_PORT};")
+            .Append($"Database={DB_CATAROG};")
+            .Append($"User Id={DB_USER};")
+            .Append($"Password={DB_PASSWORD};ApplicationName=TAS-CL;Enlist=True;");
             return sb.ToString();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        { }
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<sample01>().HasKey(r => new { r.name });
+        }
     }
     public class IQueryableToDataTable
     {

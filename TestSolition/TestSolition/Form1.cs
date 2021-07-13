@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestSolition.Entity;
 
 namespace TestSolition
 {
@@ -15,6 +16,11 @@ namespace TestSolition
         public Form1()
         {
             InitializeComponent();
+            using (Model db = new Model()) {
+                    sample01 tbl = db.sample01s.Single();
+                    result_textBox.Text = "name : " + tbl.name + "\r\nupdated_time : " + tbl.updated_time;
+                
+            }
         }
     }
 }
