@@ -31,6 +31,7 @@ namespace TestSolition
         {
             this.result_label = new System.Windows.Forms.Label();
             this.result_textBox = new System.Windows.Forms.TextBox();
+            this.update_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result_label
@@ -51,11 +52,22 @@ namespace TestSolition
             this.result_textBox.Size = new System.Drawing.Size(213, 77);
             this.result_textBox.TabIndex = 1;
             // 
+            // update_btn
+            // 
+            this.update_btn.Location = new System.Drawing.Point(95, 199);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.Size = new System.Drawing.Size(75, 23);
+            this.update_btn.TabIndex = 2;
+            this.update_btn.Text = "update";
+            this.update_btn.UseVisualStyleBackColor = true;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.update_btn);
             this.Controls.Add(this.result_textBox);
             this.Controls.Add(this.result_label);
             this.Name = "Form1";
@@ -69,6 +81,7 @@ namespace TestSolition
 
         private System.Windows.Forms.Label result_label;
         private System.Windows.Forms.TextBox result_textBox;
+        private System.Windows.Forms.Button update_btn;
     }
 }
 

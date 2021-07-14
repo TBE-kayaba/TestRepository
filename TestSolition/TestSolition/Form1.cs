@@ -17,9 +17,34 @@ namespace TestSolition
         {
             InitializeComponent();
             using (Model db = new Model()) {
+                try
+                {
                     sample01 tbl = db.sample01s.Single();
                     result_textBox.Text = "name : " + tbl.name + "\r\nupdated_time : " + tbl.updated_time;
-                
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+            //MessageBox.Show(DateTime.Now.ToString());
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            using (Model db = new Model())
+            {
+                try
+                {
+                    sample01 tbl = new sample01();
+                    tbl.name = "insName";
+                    db.Add<sample01>(tbl);
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
             }
         }
     }

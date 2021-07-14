@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ComponentModel.DataAnnotations;
+﻿
+
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Threading.Tasks;
 
 namespace TestSolition.Entity
 {
@@ -12,6 +9,9 @@ namespace TestSolition.Entity
     class sample01
     {
         public String name { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? updated_time { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        public String body { get; set; }
     }
 }
