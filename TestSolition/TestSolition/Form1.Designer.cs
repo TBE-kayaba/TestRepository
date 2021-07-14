@@ -32,6 +32,7 @@ namespace TestSolition
             this.result_label = new System.Windows.Forms.Label();
             this.result_textBox = new System.Windows.Forms.TextBox();
             this.update_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // result_label
@@ -62,11 +63,21 @@ namespace TestSolition
             this.update_btn.UseVisualStyleBackColor = true;
             this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(388, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "developにて変更";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.update_btn);
             this.Controls.Add(this.result_textBox);
             this.Controls.Add(this.result_label);
@@ -82,6 +93,7 @@ namespace TestSolition
         private System.Windows.Forms.Label result_label;
         private System.Windows.Forms.TextBox result_textBox;
         private System.Windows.Forms.Button update_btn;
+        private System.Windows.Forms.Label label1;
     }
 }
 
