@@ -27,7 +27,7 @@ namespace TestSolition
                     Console.WriteLine(e);
                 }
             }
-            MessageBox.Show("dev修正");
+            MessageBox.Show("release修正");
         }
 
         private void update_btn_Click(object sender, EventArgs e)
