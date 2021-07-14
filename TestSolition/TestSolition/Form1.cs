@@ -50,7 +50,7 @@ namespace TestSolition
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("dev修正4");
+            MessageBox.Show("dev修正5");
         }
     }
 }
