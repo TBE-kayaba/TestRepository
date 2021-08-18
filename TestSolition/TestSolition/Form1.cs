@@ -52,6 +52,7 @@ namespace TestSolition
         {
             MessageBox.Show("dev修正5");
             MessageBox.Show("プッシュ取り消し確認用");
+            MessageBox.Show("追加修正確認");
         }
     }
 }
