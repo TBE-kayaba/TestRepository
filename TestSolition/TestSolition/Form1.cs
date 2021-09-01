@@ -50,9 +50,7 @@ namespace TestSolition
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("dev修正5");
-            MessageBox.Show("プッシュ取り消し確認用");
-            MessageBox.Show("追加修正確認");
+            MessageBox.Show("sampleFeature1");
         }
     }
 }
