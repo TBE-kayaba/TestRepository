@@ -50,10 +50,17 @@ namespace TestSolition
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // test1
             // test2
             // test3
             // test4
+=======
+            MessageBox.Show("test!test!test!");
+            MessageBox.Show("test!test!test!");
+            MessageBox.Show("test!test!test!");
+            MessageBox.Show("test!test!test!");
+>>>>>>> feature/sampleFeature3
         }
     }
 }
