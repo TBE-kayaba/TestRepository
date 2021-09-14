@@ -50,10 +50,10 @@ namespace TestSolition
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("test!test!test!");
-            MessageBox.Show("test!test!test!");
-            MessageBox.Show("test!test!test!");
-            MessageBox.Show("test!test!test!");
+            MessageBox.Show("hogehogehoge");
+            MessageBox.Show("hogehogehoge");
+            MessageBox.Show("hogehogehoge");
+            MessageBox.Show("hogehogehoge");
         }
     }
 }
